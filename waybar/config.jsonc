@@ -1,0 +1,51 @@
+// -*- mode: jsonc -*-
+{
+  "spacing": 6,
+  "height": 10,
+
+  "modules-left": ["custom/archlogo", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "battery", "custom/power"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "disable-scroll": true,
+  },
+
+  "custom/archlogo": {
+    "format": "",
+    "tooltip": false,
+    "format-padding": 2,
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%B, %d :)}",
+    "tooltip": false,
+  },
+
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": "⚠",
+    "tooltip": false,
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "tooltip": false,
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout",
+  },
+}
