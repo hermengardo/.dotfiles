@@ -1,0 +1,8 @@
+show=dmenu
+prompt=Search
+allow_images=true
+image_size=32
+insensitive=true
+width=600
+height=300
+no_actions=true

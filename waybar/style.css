@@ -1,65 +1,30 @@
 * {
-    font-family: "Hack Nerd Font";
-    font-size: 13px;
-    color: #fff;
-    text-shadow:
-        -0.1px -0.1px 1.5px #e78284,
-        0.1px -0.1px 1.5px #e78284,
-        -0.1px 0.1px 1.5px #e78284,
-        0.1px 0.1px 1.5px #e78284;
-}
-
-.modules-left > widget > * {
-    margin: 0 3px 0 0;
-}
-
-.modules-right > widget > * {
-    margin: 0 3px 0 0;
+    border: none;
+    font-family: monospace;
+    font-size: 14pt;
+    min-height: 0;
+    margin-right: 10px;
+    border-radius: 0;
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0);
-    color: #fff;
+    background: #152028;
+    color: #8bb4d1;
+    opacity: 1;
 }
 
-.modules-left,
-.modules-center,
-.modules-right {
-    padding: 0 6px;
-}
-
-window#waybar #workspaces button {
-    padding: 0 8px;
+#workspaces button {
+    padding: 0px;
     background: transparent;
-    color: #fff;
-    border-bottom: 3px solid transparent;
+    color: #8bb4d1;
+    padding-left: 15px;
 }
 
-window#waybar #workspaces button.focused,
-window#waybar #workspaces button.active {
-    color: #e78284;
-    font-weight: bold;
-    border-bottom: 3px solid #e78284;
+#workspaces button.active {
+    background: #a4c8e1;
+    color: #000;
 }
 
-window#waybar #workspaces button:hover {
-    color: white;
-    font-weight: bold;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#network,
-#pulseaudio {
-    padding: 0 8px;
-}
-
-#battery.warning:not(.charging) {
-    color: #d9822b;
-}
-
-#battery.critical:not(.charging) {
-    color: #d93c3c;
+#clock {
+    color: #8bb4d1;
 }
